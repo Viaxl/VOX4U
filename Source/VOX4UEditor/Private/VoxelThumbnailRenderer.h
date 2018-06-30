@@ -9,7 +9,7 @@
 #include "VoxelThumbnailRenderer.generated.h"
 
 class UVoxel;
-class AVoxelActor;
+class AMagickaVoxelActor;
 class FRenderTarget;
 class FCanvas;
 
@@ -27,7 +27,7 @@ protected:
 
 private:
 
-	AVoxelActor* Actor;
+	AMagickaVoxelActor* Actor;
 
 };
 

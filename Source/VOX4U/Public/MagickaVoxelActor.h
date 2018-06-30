@@ -4,16 +4,16 @@
 
 #include "Engine.h"
 #include "GameFramework/Actor.h"
-#include "VoxelActor.generated.h"
+#include "MagickaVoxelActor.generated.h"
 
 class UVoxelComponent;
 
 UCLASS()
-class VOX4U_API AVoxelActor : public AActor
+class VOX4U_API AMagickaVoxelActor : public AActor
 {
 	GENERATED_BODY()
 
-	AVoxelActor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
+	AMagickaVoxelActor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
 public:
 

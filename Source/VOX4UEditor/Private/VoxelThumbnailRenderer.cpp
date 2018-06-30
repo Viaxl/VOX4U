@@ -4,7 +4,7 @@
 #include "EngineModule.h"
 #include "LegacyScreenPercentageDriver.h"
 #include "Voxel.h"
-#include "VoxelActor.h"
+#include "MagickaVoxelActor.h"
 
 FVoxelThumbnailScene::FVoxelThumbnailScene()
 {
@@ -13,7 +13,7 @@ FVoxelThumbnailScene::FVoxelThumbnailScene()
 	SpawnInfo.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 	SpawnInfo.bNoFail = true;
 	SpawnInfo.ObjectFlags = RF_Transient;
-	Actor = GetWorld()->SpawnActor<AVoxelActor>(SpawnInfo);
+	Actor = GetWorld()->SpawnActor<AMagickaVoxelActor>(SpawnInfo);
 	Actor->GetVoxelComponent()->SetMobility(EComponentMobility::Movable);
 	Actor->SetActorEnableCollision(false);
 }
